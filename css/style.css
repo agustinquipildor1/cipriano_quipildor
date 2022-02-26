@@ -27,6 +27,7 @@ header{
     align-items: center;
     border-bottom: 1px solid #FFF;
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    z-index: 1;
 }
 
 .logo img {
@@ -78,43 +79,9 @@ header label:hover{
 }
 
 /* Main */
-/* Slider */
-.slider {
-    width: 95%;
-    margin: auto;
-    margin-top: 40px;
-    overflow: hidden;
+#carouselExampleControls{
+    margin-top: 20px;
 }
-
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 300%;
-    
-    animation: cambio 13s infinite alternate;
-    animation-timing-function: ease-in;
-}
-.slider li {
-    width: 100%;
-    list-style: none;
-}
-
-.slider img{
-    width: 100%;
-
-}
-
-@keyframes cambio {
-    0% {margin-left: 0;}
-    30% {margin-left: 0;}
-
-    35% {margin-left: -100%;}
-    65% {margin-left: -100%;}
-
-    70% {margin-left: -200%;}
-    100% {margin-left: -200%;}
-}
-
 /* Productos */
 
 h2, h1{
@@ -123,13 +90,6 @@ h2, h1{
     text-align: center;
 }
 
-.productos{
-    width: 100%;
-    display: grid;
-    grid-template-rows: 700px;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* display: flex; */
-}
 
 .productos_destacados, .combos, .productos_individuales{
     font-family: 'Montserrat', sans-serif;
@@ -139,10 +99,8 @@ h2, h1{
 
 
 .card{
-    width: 80%;
-    margin: 50px;
+    
     border-radius: 6px;
-    overflow: hidden;
     background: #FFF;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
     cursor: default;
@@ -154,25 +112,7 @@ h2, h1{
     transform: translateY(-3%);
 }
 
-.card img{
-    width: 500px;
-    
-}
 
-.card .contenido{
-    padding: 15px;
-    text-align: center;
-}
-
-.card .contenido p{
-    line-height: 1.5;
-    color: #6A6A6A;
-}
-
-.card .contenido h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-}
 
 .productos_destacados a, .combos a, .productos_individuales a{
 
@@ -180,14 +120,15 @@ h2, h1{
     font-size: large;
     display: block;
     background-color: #7a0220;
-    height: 25px;
-    width: 250px;
-    text-decoration: none;
+   
+ 
     border-bottom: 1px solid #FFF;
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
     text-align: center;
-    margin: auto;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 30px;
     border-radius: 6px;
 
 }
@@ -399,15 +340,7 @@ footer .social a:hover{
         margin: 0; 
     }
 
-    .productos{
-        display: flex;
-        flex-direction: column;
-        
-    }
 
-    .card img{
-        width: 100%;
-    }
     .informacion_contacto{
         display: flex;
         flex-direction: column;
