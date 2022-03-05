@@ -1,0 +1,77 @@
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $color_fondo_header;
+    /* background-color: #33131b; */
+    height: 75px;
+    width: 100%;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    z-index: 1;
+
+    div{
+        width: 100%;
+    }
+
+    label{
+        display: none;
+        width: 46px;
+        height: 46px;
+    
+        border-right: 1px solid #FFF;
+
+        &:hover{
+            cursor: pointer;
+            background: rgba(0, 0, 0, .3);
+        }
+    }
+}
+
+
+
+.logo img {
+    width: 160px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+
+.menu{
+    ul{
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    li{
+        border-right: 2px solid #F9B6AC;
+        border-radius: 4%;
+        /* background-image: linear-gradient(to bottom, #ffff, #ffdde1); */      
+
+        a{ 
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color:black;
+        }
+
+        &:hover{
+            background: rgba(0, 0, 0, .3); 
+        }
+
+    }
+
+}
+
+#carouselExampleControls{
+    margin-top: 20px;
+}

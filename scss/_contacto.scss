@@ -1,0 +1,52 @@
+.contacto{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.informacion_contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.datos{
+    width: 40%;
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+    cursor: default;
+    transition: all 400ms ease;
+    padding: 15px;
+    text-align: center;
+}
+
+.informacion{
+    display: flex;
+    width: 90%;
+    margin: 70px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+    cursor: default;
+    transition: all 400ms ease;
+
+    img{
+        width: 450px;
+    }
+
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.65cm;
+        margin: 20px;
+        text-align:justify;
+    }
+}
+
+
+
+.form_contact{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+

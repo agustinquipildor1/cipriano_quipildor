@@ -1,0 +1,63 @@
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background:WHITE;
+        width:70%;
+        margin-left:-70% ;
+        transition: all 0.5s;
+
+        ul{
+            flex-direction: column;
+           
+        }
+
+        li{
+            border: 2px solid #F9B6AC;
+            border-radius: 4%;
+        }
+    }
+
+
+    #btn-menu:checked ~ .menu {
+        margin: 0; 
+    }
+
+
+    .informacion_contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .datos{
+
+            width: 99%;
+    
+        }
+    }
+
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #FFF;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+        cursor: default;
+        transition: all 400ms ease;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .aboutus p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.5cm;
+        text-align:justify;
+    }
+}
