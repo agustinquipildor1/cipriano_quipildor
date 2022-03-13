@@ -26,17 +26,26 @@
 }
 
 
-.card{
-    
-    border-radius: 6px;
-    background: $color_fondo_cards;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+@mixin tarjetas($radioBorde, $colorFondo, $sombra, $transicion){
+    border-radius: $radioBorde;
+    background: $colorFondo;
+    box-shadow: $sombra;
     cursor: default;
-    transition: all 400ms ease;
+    transition: $transicion;
 
     &:hover{
         box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
         transform: translateY(-3%);
     }
 }
+
+.tarjetaProducto{
+    @include tarjetas(6px,$color_fondo_producto,0px 1px 10px rgba(0, 0, 0, .2),all 400ms ease);
+}
+
+.tarjetaCombo{
+    @include tarjetas(30px,$color_fondo_combo,0px 1px 10px rgba(0, 0, 0, .2),all 100ms ease);
+}
+
+
 
