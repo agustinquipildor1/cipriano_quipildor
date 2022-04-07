@@ -1,5 +1,4 @@
 # cipriano_quipildor
-Desafío Obligatorio 4
 Sitio Web de Pastelería Cipriano.
 Para navegar por el sitio que consta de 5 páginas se debe hacer uso del menú superior, en caso de versión mobile posicionarse sobre 
 el ícono del menú hamburguesa para que se despliegue.
